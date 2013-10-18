@@ -1,0 +1,501 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+/* line 17, ../src/scss/lib/vendor/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../src/scss/lib/vendor/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../src/scss/lib/vendor/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../src/scss/lib/vendor/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../src/scss/lib/vendor/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, ../src/scss/lib/vendor/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+/* remember to highlight inserts somehow! */
+/* line 52, ../src/scss/lib/vendor/_reset.scss */
+ins {
+  text-decoration: none;
+}
+
+/* line 55, ../src/scss/lib/vendor/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 59, ../src/scss/lib/vendor/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 14, ../../../../../../.rvm/gems/ruby-2.0.0-p195/gems/susy-1.0.9/sass/susy/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/**
+ * Base styles: opinionated defaults.
+ */
+/* line 8, ../src/scss/partials/_base.scss */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 12, ../src/scss/partials/_base.scss */
+body {
+  background: #F7F0E5;
+  overflow-x: hidden;
+}
+
+/* line 18, ../src/scss/partials/_base.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1 px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 28, ../src/scss/partials/_base.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 34, ../src/scss/partials/_base.scss */
+nav a {
+  text-decoration: none;
+}
+/* line 38, ../src/scss/partials/_base.scss */
+nav li {
+  display: block;
+  float: left;
+}
+/* line 43, ../src/scss/partials/_base.scss */
+nav ul {
+  overflow: hidden;
+}
+
+/* line 49, ../src/scss/partials/_base.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 53, ../src/scss/partials/_base.scss */
+html {
+  background: #fff;
+  font-family: Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 64, ../src/scss/partials/_base.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222222;
+}
+
+/* line 61, ../../../../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 87.5%;
+}
+
+/* line 64, ../../../../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 14px;
+  line-height: 1.28571em;
+}
+
+/* line 71, ../src/scss/partials/_base.scss */
+a {
+  color: blue;
+}
+/* line 24, ../../../../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #9999ff;
+}
+
+/* line 76, ../src/scss/partials/_base.scss */
+h1 {
+  font-size: 2em;
+  line-height: 1.28571em;
+  margin-top: 0.64286em;
+  margin-bottom: 0.64286em;
+}
+
+/* line 85, ../src/scss/partials/_base.scss */
+h2 {
+  font-size: 1.5em;
+  line-height: 1.71429em;
+  margin-top: 0.85714em;
+  margin-bottom: 0.85714em;
+}
+
+/* line 91, ../src/scss/partials/_base.scss */
+h3 {
+  font-size: 1.17em;
+  line-height: 2.1978em;
+  margin-top: 1.0989em;
+  margin-bottom: 1.0989em;
+}
+
+/* line 97, ../src/scss/partials/_base.scss */
+h4 {
+  font-size: 1em;
+  line-height: 1.28571em;
+  margin-top: 1.28571em;
+  margin-bottom: 1.28571em;
+}
+
+/* line 103, ../src/scss/partials/_base.scss */
+h5 {
+  font-size: 0.83em;
+  line-height: 1.54905em;
+  margin-top: 1.54905em;
+  margin-bottom: 1.54905em;
+}
+
+/* line 109, ../src/scss/partials/_base.scss */
+h6 {
+  font-size: 0.67em;
+  line-height: 1.91898em;
+  margin-top: 1.91898em;
+  margin-bottom: 1.91898em;
+}
+
+/**
+ * Print styles.
+ */
+@media print {
+  /* line 121, ../src/scss/partials/_base.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 129, ../src/scss/partials/_base.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 133, ../src/scss/partials/_base.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 137, ../src/scss/partials/_base.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 142, ../src/scss/partials/_base.scss */
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 147, ../src/scss/partials/_base.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 152, ../src/scss/partials/_base.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 157, ../src/scss/partials/_base.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 161, ../src/scss/partials/_base.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 171, ../src/scss/partials/_base.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 177, ../src/scss/partials/_base.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/**
+ * Default Theme
+ */
+/* line 5, ../src/scss/lib/themes/_default.scss */
+body {
+  background: #f7f0e5;
+}
+
+/* line 9, ../src/scss/lib/themes/_default.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Rockwell W01", serif;
+}
+
+/* line 13, ../src/scss/lib/themes/_default.scss */
+hr {
+  border-top: 3px dashed #B5C5C5;
+}
+
+/**
+ * Flag object.
+ *
+ * E.g.:
+ *
+ *    <div class="flag flag--bottom">
+ *        <img src="" alt="" class="flag__img">
+ *        <p class="flag__body">Lorem ipsum dolor sit amet</p>
+ *    </div>
+ */
+/* line 12, ../src/scss/lib/objects/_flag.scss */
+.flag {
+  display: table;
+  width: 100%;
+}
+
+/* line 18, ../src/scss/lib/objects/_flag.scss */
+.flag__image,
+.flag__body {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 22, ../src/scss/lib/objects/_flag.scss */
+.flag--top .flag__image, .flag--top
+.flag__body {
+  vertical-align: top;
+}
+/* line 26, ../src/scss/lib/objects/_flag.scss */
+.flag--bottom .flag__image, .flag--bottom
+.flag__body {
+  vertical-align: bottom;
+}
+
+/* line 31, ../src/scss/lib/objects/_flag.scss */
+.flag__image > img {
+  display: block;
+}
+
+/* line 35, ../src/scss/lib/objects/_flag.scss */
+.flag__body {
+  width: 100%;
+}
+
+/**
+ * Media object.
+ *
+ * E.g.:
+ *
+ *    <div class="media">
+ *        <img src="" alt="" class="media__img">
+ *        <p class="media__body">Lorem ipsum dolor sit amet</p>
+ *    </div>
+ */
+/* line 12, ../src/scss/lib/objects/_media.scss */
+.media {
+  display: block;
+}
+
+/* line 16, ../src/scss/lib/objects/_media.scss */
+.media__img {
+  float: left;
+}
+
+/* line 20, ../src/scss/lib/objects/_media.scss */
+.media__img--rev {
+  float: right;
+}
+
+/* line 25, ../src/scss/lib/objects/_media.scss */
+.media__img img,
+.media__img--rev img {
+  display: block;
+}
+
+/* line 29, ../src/scss/lib/objects/_media.scss */
+.media__body {
+  overflow: hidden;
+}
+
+/**
+ * Layout styles.
+ */
+/* line 4, ../src/scss/partials/_layout.scss */
+.l {
+  display: inline-block;
+  width: 100%;
+}
+/* line 8, ../src/scss/partials/_layout.scss */
+.l .l-col1 {
+  float: left;
+  width: 70%;
+}
+/* line 13, ../src/scss/partials/_layout.scss */
+.l .l-col2 {
+  float: right;
+  width: 20%;
+}
+
+/* line 19, ../src/scss/partials/_layout.scss */
+.half {
+  width: 48.27586%;
+  float: left;
+  margin-right: 3.44828%;
+  display: inline;
+}
+
+/* line 23, ../src/scss/partials/_layout.scss */
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+/* line 28, ../src/scss/partials/_layout.scss */
+.page-footer .footer-content {
+  width: 65.51724%;
+  float: left;
+  margin-right: 3.44828%;
+  display: inline;
+}
+/* line 31, ../src/scss/partials/_layout.scss */
+.page-footer .footer-content a {
+  font-weight: bold;
+}
+/* line 35, ../src/scss/partials/_layout.scss */
+.page-footer .footer-content li {
+  display: block;
+  float: left;
+  height: 19px;
+  margin-right: 10px;
+}
+/* line 42, ../src/scss/partials/_layout.scss */
+.page-footer .footer-content p {
+  margin-bottom: 7px;
+}
+/* line 46, ../src/scss/partials/_layout.scss */
+.page-footer .footer-content a, .page-footer .footer-content li, .page-footer .footer-content p {
+  color: #858585;
+  font-size: 15px;
+}
+/* line 52, ../src/scss/partials/_layout.scss */
+.page-footer .footer-social {
+  width: 31.03448%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+/* line 55, ../src/scss/partials/_layout.scss */
+.page-footer .footer-social li {
+  margin-left: 10px;
+}
+/* line 59, ../src/scss/partials/_layout.scss */
+.page-footer .footer-social ul {
+  float: right;
+  margin-top: -6px;
+}
+
+/**
+ * Screen styles.
+ */
+/**
+ * States.
+ */
+/* line 4, ../src/scss/partials/_state.scss */
+.is-hidden {
+  display: none !important;
+}
+
+/* line 8, ../src/scss/partials/_state.scss */
+.active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 46, ../src/scss/main.scss */
+.wrap, .page-footer {
+  max-width: 61em;
+  _width: 61em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.wrap:after, .page-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
