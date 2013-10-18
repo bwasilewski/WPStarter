@@ -1,0 +1,64 @@
+/**
+ * Layout styles.
+ */
+.l {
+  display: inline-block;
+  width: 100%;
+
+  .l-col1 {
+    float: left;
+    width: 70%;
+  }
+
+  .l-col2 {
+    float: right;
+    width: 20%;
+  }
+}
+
+.half {
+  @include span-columns(3, 6);
+}
+
+.page-footer {
+  @extend .wrap;
+  padding-top: 40px;
+  padding-bottom: 100px;
+
+  .footer-content {
+    @include span-columns(4, 6);
+
+    a {
+      font-weight: bold;
+    }
+
+    li {
+      display: block;
+      float: left;
+      height: 19px;
+      margin-right: 10px;
+    }
+
+    p {
+      margin-bottom: 7px;
+    }
+
+    a, li, p {
+      color: #858585;
+      font-size: 15px;
+    }
+  }
+
+  .footer-social {
+    @include span-columns(2 omega, 6);
+
+    li {
+      margin-left: 10px;
+    }
+
+    ul {
+      float: right;
+      margin-top: -6px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.bar {
+	@extend .wrap;
+
+	height: 12px;
+	top: 468px;
+	background: $green;
+}

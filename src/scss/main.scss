@@ -1,0 +1,104 @@
+@charset 'UTF-8';
+
+// Compass
+// @import "lib/vendor/compass/utilities";
+// @import "lib/vendor/compass/typography";
+// @import "lib/vendor/compass/css3";
+// @import "lib/vendor/compass/reset";
+
+@import "compass/utilities";
+@import "compass/typography";
+@import "compass/css3";
+@import "susy";
+
+// @import "lib/vendor/normalize";
+@import "lib/vendor/reset";
+@import "lib/vendor/media-queries";
+
+@import "vars";
+
+@import "lib/mixins";
+@import "lib/placeholders";
+
+// Base layer
+@import "partials/base";
+
+// Theme layer
+@import "lib/themes/default";
+
+// Objects
+@import "lib/objects/bar";
+@import "lib/objects/bios";
+@import "lib/objects/block";
+@import "lib/objects/circle";
+
+@import "lib/objects/media";
+
+@import "lib/objects/page-header";
+@import "lib/objects/slideshow";
+@import "lib/objects/social-menu-item";
+@import "lib/objects/spacer";
+
+// Layout layer
+@import "partials/layout";
+
+// Module layer (BEM blocks as modules)
+@import "partials/blocks";
+
+// State layer
+@import "partials/state";
+
+@import "partials/shame";
+
+
+
+.wrap {
+	@include container;
+}
+
+.content {
+	@extend .wrap;
+
+	background-color: #fff;
+	
+	position: relative;
+	
+	hr {
+		margin-bottom: 0;
+	}
+}
+
+
+
+.page.home {
+	.content {
+		margin-top: -240px;
+		padding-top: 500px;
+	}
+
+	.entry-content {
+		padding-bottom: 30px;
+
+		a {
+			font-family: $rockwell-bold;
+			font-size: 16px;
+			color: #39B2DF;
+			text-decoration: none;
+		}
+
+		p {
+			-moz-column-count: 2;
+			-moz-column-gap: 50px;
+			-webkit-column-count: 2;
+			-webkit-column-gap: 50px;
+			column-count: 2;
+			column-gap: 50px;
+
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			color: #666;
+			line-height: 20px;
+			margin: 0 0 20px 0;
+		}
+	}
+}

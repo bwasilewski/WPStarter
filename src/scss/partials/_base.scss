@@ -1,0 +1,180 @@
+/**
+ * Base styles: opinionated defaults.
+ */
+
+// http://paulirish.com/2012/box-sizing-border-box-ftw/
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+}
+
+body {
+  background: #F7F0E5;
+  overflow-x: hidden;
+}
+
+// A better looking default horizontal rule
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1 px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+// Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+img {
+  vertical-align: middle;
+}
+
+// Position nav menu items inline via float
+nav {
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    display: block;
+    float: left;
+  }
+
+  ul {
+    overflow: hidden;
+  }
+}
+
+// Allow only vertical resizing of textareas.
+textarea {
+  resize: vertical;
+}
+
+html {
+  background: #fff;
+  font-family: $base-font-family;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: $base-text-color;
+}
+
+@include establish-baseline;
+
+// Set links color (normal, ?hover, ?active, ?visited, ?focus)
+a {
+  @include link-colors(blue, lighten(blue, 30%));
+}
+
+// Set titles sizes and margins
+h1 {
+  // Set the font-size and line-height while keeping a proper vertical rhythm
+  @include adjust-font-size-to($h1-font-size);
+
+  // Set 1 unit of vertical rhythm on the top and bottom margins
+  @include leader(1, $h1-font-size);
+  @include trailer(1, $h1-font-size);
+}
+
+h2 {
+  @include adjust-font-size-to($h2-font-size);
+  @include leader(1, $h2-font-size);
+  @include trailer(1, $h2-font-size);
+}
+
+h3 {
+  @include adjust-font-size-to($h3-font-size);
+  @include leader(1, $h3-font-size);
+  @include trailer(1, $h3-font-size);
+}
+
+h4 {
+  @include adjust-font-size-to($h4-font-size);
+  @include leader(1, $h4-font-size);
+  @include trailer(1, $h4-font-size);
+}
+
+h5 {
+  @include adjust-font-size-to($h5-font-size);
+  @include leader(1, $h5-font-size);
+  @include trailer(1, $h5-font-size);
+}
+
+h6 {
+  @include adjust-font-size-to($h6-font-size);
+  @include leader(1, $h6-font-size);
+  @include trailer(1, $h6-font-size);
+}
+
+/**
+ * Print styles.
+ */
+
+// Inlined to avoid required HTTP connection: h5bp.com/r
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important; // Black prints faster: h5bp.com/s
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group; // h5bp.com/t
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

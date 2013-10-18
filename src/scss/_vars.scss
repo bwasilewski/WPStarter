@@ -1,0 +1,46 @@
+@include border-box-sizing;
+
+// [Compass] Disable support for IE 6 & 7.
+$legacy-support-for-ie: false;
+
+// [Compass] SVG gradients for IE
+$experimental-support-for-svg: true;
+
+// Colors
+$white: #fff;
+$green: #8BC659;
+$bodyBg: #F7F0E5;
+
+
+// Fonts
+$rockwell-light: 'Rockwell W01 Light', serif;
+$rockwell: 'Rockwell W01', serif;
+$rockwell-bold:'Rockwell W01 Bold', serif;
+
+$proxima-thin: 'Proxima N W01 Thin Reg';
+$proxima-bold: 'Proxima N W01 Bold';
+
+
+// [Compass] Set the base font size and line height
+$base-font-size: 14px;
+$base-line-height: 18px;
+
+$base-font-family: Arial, sans-serif;
+$base-text-color: #222;
+
+// Titles sizes
+$h1-font-size: 2    * $base-font-size;
+$h2-font-size: 1.5  * $base-font-size;
+$h3-font-size: 1.17 * $base-font-size;
+$h4-font-size: 1    * $base-font-size;
+$h5-font-size: 0.83 * $base-font-size;
+$h6-font-size: 0.67 * $base-font-size;
+
+// Global sprites with padding
+// $icons: sprite-map("icons/*.png", $spacing: 10px);
+
+
+
+
+$header-color: #1e1e1e;
+$body-color: #666;

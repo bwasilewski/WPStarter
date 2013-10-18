@@ -1,0 +1,37 @@
+/**
+ * Flag object.
+ *
+ * E.g.:
+ *
+ *    <div class="flag flag--bottom">
+ *        <img src="" alt="" class="flag__img">
+ *        <p class="flag__body">Lorem ipsum dolor sit amet</p>
+ *    </div>
+ */
+
+.flag {
+  display: table;
+  width: 100%;
+}
+
+.flag__image,
+.flag__body {
+  display: table-cell;
+  vertical-align: middle;
+
+  .flag--top & {
+    vertical-align: top;
+  }
+
+  .flag--bottom & {
+    vertical-align: bottom;
+  }
+}
+
+.flag__image > img {
+  display: block;
+}
+
+.flag__body {
+  width: 100%;
+}

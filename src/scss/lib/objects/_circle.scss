@@ -1,0 +1,27 @@
+.circle {
+	background: #8BC659;
+	width: 210px;
+	height: 210px;
+	border-radius: 50%;
+	float: left;
+
+	margin-right: 35px;
+
+	&.right {
+		margin-right: 0;
+	}
+
+	img {
+		display: block;
+		margin: 30px auto 18px;
+	}
+
+	p {
+		font-size: 22px;
+		text-align: center;
+		color: $white;
+		line-height: 27px;
+		width: 131px;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,15 @@
+/**
+ * Default Theme
+ */
+
+body {
+	background: $bodyBg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $rockwell;
+}
+
+hr {
+	border-top: 3px dashed #B5C5C5;
+}

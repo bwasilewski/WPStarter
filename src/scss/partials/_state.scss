@@ -1,0 +1,10 @@
+/**
+ * States.
+ */
+.is-hidden {
+  display: none !important;
+}
+
+.active {
+	@include opacity(1);
+}

@@ -1,0 +1,44 @@
+.page-header {
+	background: url(../img/bg-header.jpg) repeat left top;
+	overflow: auto;
+	height: 109px;
+	border-bottom: 1px solid #fff;
+	position: relative;
+
+	.logo {
+		display: block;
+		width: 93px;
+		height: 24px;
+		background: url(../img/logo.png) no-repeat left top;
+		text-indent: -9999px;
+	
+		position: absolute;
+		top: 34px;
+	}
+
+	.nav-main {
+		position: absolute;
+		right: 0;
+		top: 40px;
+
+		a {
+			font-size: 18px;
+			color: #fff;
+			font-family: $rockwell;
+		}
+
+		li {
+			border-right: 1px solid #666;
+			padding: 2px 16px;
+
+			&.last {
+				border-right: none;
+				padding-right: 0;
+			}
+		}
+	}
+
+	.wrap {
+		position: relative;
+	}
+}
